@@ -1,0 +1,22 @@
+package com.tyss.jpawithhibernateapp;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.tyss.jpawithhibernateapp.dto.ProductInfo;
+
+public class InsertDemo 
+{
+	public static void main(String[] args) 
+	{
+		ProductInfo prductInfo=new ProductInfo();
+		prductInfo.setPid(101);
+		prductInfo.setPname("pen");
+		prductInfo.setQuantity(10);
+		
+		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("TestPersistence");
+		EntityManager entityManager=entityManagerFactory.createEntityManager();
+		
+	}//end main() methpod
+}//end of  InsertDemo

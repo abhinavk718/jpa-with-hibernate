@@ -1,0 +1,15 @@
+package com.tyss.jpawithhibernate;
+
+import com.tyss.jpawithhibernate.dto.ProductInfo;
+
+public class InsertDemo 
+{
+	public static void main(String[] args) 
+	{
+		ProductInfo productInfo=new ProductInfo();
+		productInfo.setPid(101);
+		productInfo.setPname("Pen");
+		productInfo.setPrice(100);
+		productInfo.setQuantity(10);
+	}//end of main() method
+}//end of InsertDemo class 

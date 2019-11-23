@@ -1,0 +1,6 @@
+package com.tyss.jpawithhibernateapp.manytomany;
+
+public class Student
+{
+
+}

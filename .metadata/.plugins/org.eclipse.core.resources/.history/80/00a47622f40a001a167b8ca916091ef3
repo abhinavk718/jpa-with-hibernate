@@ -1,0 +1,27 @@
+package com.tyss.myfirstjpawithhibernate.dto;
+
+public class ExecuteDeleteQuery 
+{
+	public static void main(String[] args)
+	{
+		try 
+		{
+			
+		} 
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			try 
+			{
+				
+			}
+			catch (Exception e2)
+			{
+				e2.printStackTrace();
+			}
+		}//end of finally block
+	}//end of main() method
+}//end of ExecuteDeleteQuery

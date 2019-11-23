@@ -1,0 +1,5 @@
+package com.tyss.jpawithhibernateapp.jpql;
+
+public class UpdateDemo {
+
+}

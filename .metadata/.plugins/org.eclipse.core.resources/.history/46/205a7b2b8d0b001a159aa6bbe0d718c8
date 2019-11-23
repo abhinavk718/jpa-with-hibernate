@@ -1,0 +1,19 @@
+package com.tyss.jpawithhibernateapp;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import com.tyss.jpawithhibernateapp.dto.ProductInfo;
+
+public class ReadDemo {
+
+	public static void main(String[] args) 
+	{
+		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("TestPersistence");
+		EntityManager  entityManager=entityManagerFactory.createEntityManager();
+		entityManager.find(ProductInfo.class, 101);
+		
+
+	}//end of main() method
+}//end of  ReadDemo

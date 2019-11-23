@@ -1,0 +1,21 @@
+package com.tyss.jpawithhibernateapp.jpql;
+
+import java.util.ArrayList;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+public class ReadDemo
+{
+	public static void main(String[] args)
+	{
+		EntityManagerFactory entityManagerFactory=Persistence.createEntityManagerFactory("TestPersistence");
+		EntityManager entityManager=entityManagerFactory.createEntityManager();
+		String jpql="from ProductInfo";
+		Query query=entityManager.createQuery(jpql);
+		List al=query.getResultList();
+		
+	}//end of main() method
+}//end of ReadDemo

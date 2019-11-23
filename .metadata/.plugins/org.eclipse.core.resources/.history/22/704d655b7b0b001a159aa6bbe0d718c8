@@ -1,0 +1,9 @@
+package com.tyss.jpawithhibernateapp;
+
+public class InsertDemo {
+
+	public static void main(String[] args) 
+	{
+		
+	}//end 
+}

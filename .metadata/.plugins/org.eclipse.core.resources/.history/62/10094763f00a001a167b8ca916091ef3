@@ -1,0 +1,30 @@
+package com.tyss.myfirstjpawithhibernate.dto;
+
+public class ExecuteUpdateQuery 
+{
+	public static void main(String[] args) 
+	{
+		String url="jdbc:mysql://localhost:3306/ust_ty_db?user=root&password=root";
+		String sql="update employee_info set name='Roshan' where id=1001";
+		try 
+		{
+			
+		}
+		catch (Exception e) 
+		{
+			e.printStackTrace();
+		}
+		finally 
+		{
+			//step 5 end of all jdbc resources
+			try
+			{
+				
+			}
+			catch (Exception e2) 
+			{
+				e2.printStackTrace();
+			}
+		}//end of finally block
+	}//end of main() method
+}//end of ExecuteUpdateQuery
